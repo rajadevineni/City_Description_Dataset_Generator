@@ -16,7 +16,7 @@ There are 15,000 cities(CSV file) in the source. The source file is available [h
   1. I considered such cities as duplicates as I couldn't automate WIKI_Travel link for them.
   1. Removing cities with same name is done based on their population.
   1. The city with a common name but has greater population than the rest of the cities is kept and remaining are dropped. 
-  1. After removing the cities with common name, columns "city_ascii" & "country" are kept in the dataframe dropping the unwanted columns like lattitude, longitude etc., 
+  1. After removing the cities with common name, columns **"city_ascii"** & **"country"** are kept in the dataframe dropping the unwanted columns like lattitude, longitude etc., 
 
 ## Fetching Article data of city:
 City name has special characters so it is cleaned and a WikiTravel URL is generated for every city with the below code
@@ -41,8 +41,8 @@ if len_article >700:
 
 ## Saving Dataset:
 
-* The dataframe finally consists of 4016 cities descriptions, all the data is stored in the form of "city_description.csv" and also "city_description.h5" file.
+* The dataframe finally consists of **4016** cities descriptions, all the data is stored in the form of [**"city_description.csv"**](https://github.com/rajadevineni/City_Description_Dataset_Generator/blob/master/city_description.csv) and also [**"city_description.h5"**](https://github.com/rajadevineni/City_Description_Dataset_Generator/blob/master/city_description.h5) file.
 Both the files are uploaded in this repository. 
 
 ## End Note:
->This dataset is available under MIT Licence. Feel free to use this data to make clustering of cities based on their description. 
+>This dataset is available under MIT Licence. Feel free to use this data to make clustering of cities based on their description :+1: :octocat:
