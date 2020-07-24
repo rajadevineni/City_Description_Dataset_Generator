@@ -20,21 +20,24 @@ There are 15,000 cities(CSV file) in the source. The source file is available [h
 
 ## Fetching Article data of city:
 City name has special characters so it is cleaned and a WikiTravel URL is generated for every city with the below code
-'''city = row['city_ascii'].replace(' ', '_')
 
+~~~
+city = row['city_ascii'].replace(' ', '_')
+# creating a URL with city name
 URL = 'https://wikitravel.org/en/' + city 
-'''
+~~~
 
 
 There are some cities with a dedicated webpage but has no information on it, there are some cities with very less information that would not be enough to make an analysis.
 Such cities are dropped based on the size of article data fetched. The below code takes care of the filtering.
-'''
+
+~~~
 if len_article >700:
     new_row = {'City':row['city_ascii'], 'Country': row['country'], 'Description':article_data}
     city_descriptions = city_descriptions.append(new_row, ignore_index=True)
     counter += 1
     print(counter, row['city_ascii'])
-'''
+~~~
 
 ## Saving Dataset:
 
