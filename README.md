@@ -20,9 +20,8 @@ There are 15,000 cities(CSV file) in the source. The source file is available [h
 
 ## Fetching Article data of city:
 City name has special characters so it is cleaned and a WikiTravel URL is generated for every city with the below code
-'''
-city = row['city_ascii'].replace(' ', '_')
-# creating a URL with city name
+'''city = row['city_ascii'].replace(' ', '_')
+
 URL = 'https://wikitravel.org/en/' + city 
 '''
 
