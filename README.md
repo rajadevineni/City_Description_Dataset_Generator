@@ -45,4 +45,4 @@ if len_article >700:
 Both the files are uploaded in this repository. 
 
 ## End Note:
->This dataset is available here under MIT Licence and at [Kaggle](https://www.kaggle.com/rajasekhardevineni/city-discription-wiki-travel). Feel free to use this data to make clustering of cities based on their description :+1: :octocat: Happy Learning! :metal: 
+>This dataset is available here under GPL-3.0 License and at [Kaggle](https://www.kaggle.com/rajasekhardevineni/city-discription-wiki-travel). Feel free to use this data to make clustering of cities based on their description :+1: :octocat: Happy Learning! :metal: 
